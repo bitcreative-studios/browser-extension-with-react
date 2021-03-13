@@ -10,6 +10,7 @@ const isDevMode = process.env.NODE_ENV !== 'production'
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: isDevMode ? 'development' : 'production',
+  devtool: false,
   entry: {
     background: './background.js',
     popup: './popup/index.js',
@@ -33,7 +34,7 @@ module.exports = {
       patterns: [{ from: 'icons', to: 'icons' }, { from: 'manifest.json' }],
     }),
     new HtmlWebpackPlugin({
-      filename: 'popup',
+      filename: 'popup.html',
       template: 'popup/popup.html',
       chunks: ['popup'],
     }),

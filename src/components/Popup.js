@@ -12,7 +12,16 @@ const Popup = () => {
         </div>
         <div className="text-sm">
           <p className="text-green-500 mb-1 flex item-center">
-            <i className="material-icons">arrow_drop_up</i> 5.77%
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M7 14l5-5 5 5z" />
+            </svg>{' '}
+            5.77%
           </p>
           <p className="text-gray-600">Since last month</p>
         </div>
